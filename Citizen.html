@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Feedback</title>
+    <link rel="stylesheet" href="Citizen.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Citizen</div>
+        <nav>
+            <ul>
+                
+                <li><a href="#">Report</a></li>
+                <li><a href="Update_Citizen.html">Update</a></li>
+                <li><a href="Login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content: Person Icon on the left, Feedback form on the right -->
+    <div class="main-content">
+        <!-- Person Icon -->
+        <div class="person-icon">
+            <img src="./Images/citizen1.jpg" alt="Person Icon"> <!-- Replace with the actual path to the icon -->
+        </div>
+
+        <!-- Feedback Form Section -->
+        <div class="feedback-container">
+            <form class="feedback-form">
+                <h2>Feedback</h2>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contact">Contact :</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="comment">Comment :</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

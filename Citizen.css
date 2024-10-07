@@ -1,0 +1,156 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f9; /* Matches the background color in your design */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Light gray */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content: person icon on the left, feedback form on the right */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+
+.person-icon img {
+    width: 280px;
+    height: auto;
+    margin-left: 12em;
+    margin-top: 10em;
+}
+
+/* Feedback form container */
+.feedback-container {
+    flex: 1;
+    max-width: 400px; /* Reduced the width for smaller form size */
+    padding: 2rem;
+    background-color: #f4f4f9; /* Matches the form background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #4CAF50;
+    /* margin-left: auto; */
+    margin-top: 12em;
+    margin-right: 8em;
+}
+
+/* Form styling */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.feedback-form label {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.feedback-form textarea {
+    resize: none;
+    height: 80px; /* Reduced the height slightly */
+}
+
+/* Submit button styling */
+.feedback-form button {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #48607A; /* Darker button color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-container {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .person-icon img {
+        width: 120px; /* Slightly smaller on mobile */
+    }
+}

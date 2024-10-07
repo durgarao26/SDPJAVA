@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Issue</title>
+    <link rel="stylesheet" href="Update_Citizen.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Citizen</div>
+        <nav>
+            <ul>
+                
+                <li><a href="#">Report</a></li>
+                <li><a href="Update_Citizen.html">Update</a></li>
+                <li><a href="Login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Issue Form Section (Centered) -->
+    <div class="centered-container">
+        <form class="issue-form">
+            <h2>Submit Your Issue</h2>
+            
+            <!-- Name Field -->
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Issue Area Field -->
+            <label for="issue">Issue Area :</label>
+            <input type="text" id="issue" name="issue" placeholder="Enter the issue area" required>
+
+            <!-- Email Field -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Contact Field -->
+            <label for="contact">Contact :</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+            <!-- Comment Field -->
+            <label for="comment">Comment :</label>
+            <textarea id="comment" name="comment" placeholder="Describe your issue in detail" required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

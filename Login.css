@@ -1,0 +1,236 @@
+/* Login.css */
+
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header styling (same as previous) */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Login and Register Page Styling */
+h2 {
+    text-align: center;
+    margin: 2rem 0;
+    color: #4CAF50;
+}
+
+/* Login options */
+.login-options {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-options button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login-options button:hover {
+    background-color: #45a049;
+}
+
+/* Login Forms */
+.login-forms {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    background-color: white;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    border: 3px solid #45a049;
+}
+
+.login-form h3 {
+    margin-bottom: 1.5rem;
+    color: #4CAF50;
+}
+
+.login-form form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-form form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login-form form button:hover {
+    background-color: #45a049;
+}
+
+/* Register Prompt */
+.register-prompt {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register-prompt a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-prompt a:hover {
+    color: #45a049;
+}
+
+/* Account Prompt Box (Register form) */
+.account-prompt {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    z-index: 10;
+    text-align: center;
+}
+
+.account-prompt h2 {
+    margin-bottom: 1.5rem;
+    color: #4CAF50;
+}
+
+.account-prompt form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.75rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.account-prompt form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0.75rem 0;
+    transition: background-color 0.3s ease;
+}
+
+.account-prompt form button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .login-forms {
+        flex-direction: column;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .account-prompt {
+        width: 100%;
+        max-width: 300px;
+    }
+}

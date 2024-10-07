@@ -1,0 +1,137 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f9; /* Background color */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navbar CSS */
+header {
+    background-color: #4CAF50; /* Light gray for the header */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 1.5rem; /* Logo font size */
+    font-weight: bold; /* Bold font weight */
+    color: #fff; /* Logo color */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout for nav items */
+}
+
+nav ul li {
+    margin-left: 2rem; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+    padding: 0.5rem 1rem; /* Padding around links for better click area */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+    background-color: #e2e9f3; /* Change background on hover */
+    color: white; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+/* Dashboard styling */
+.dashboard-container {
+    display: flex; /* Align items in a row */
+    justify-content: space-around; /* Space items evenly */
+    align-items: flex-start; /* Align items to the start */
+    padding: 2rem; /* Padding for the container */
+    max-width: 1200px; /* Maximum width for the dashboard */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Issues Registered Section */
+.issues-registered {
+    margin-top: 4em;
+    border: 3px solid #4CAF50;
+    padding: 2rem; 
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    width: 40%; /* Width of the section */
+}
+
+.issues-count {
+    margin: 1.5rem 4em;
+    font-size: 40px;
+    border: 3px solid #5A738E;
+}
+
+
+/* Button styling */
+.view-issues {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.view-issues:hover {
+    background-color: #06f30e; /* Darker hover effect */
+}
+
+/* Problems Section */
+.problems {
+    margin-top: 3em;
+    /* background-color: #A7A9AC; Same background color */
+    padding: 2rem; /* Padding inside the section */
+    border-radius: 10px; /* Rounded corners */
+    width: 40%; /* Width of the section */
+    border: 3px solid #4CAF50;
+}
+
+.problems label {
+    display: block; /* Block display for labels */
+    margin: 1rem 0 0.5rem; /* Margin for spacing */
+    font-weight: bold; /* Bold font for labels */
+}
+
+.problems input {
+    width: 100%; /* Full width for inputs */
+    padding: 0.5rem; /* Padding inside input */
+    margin-bottom: 1rem; /* Margin below input */
+    border: 2px solid black; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Update button styling */
+.update-button {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.update-button:hover {
+    background-color: #4a6175; /* Darker hover effect */
+}

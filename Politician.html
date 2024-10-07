@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politician Dashboard</title>
+    <link rel="stylesheet" href="Politician.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Politician</div>
+        <nav>
+            <ul>
+                <li><a href="#">Update</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="Login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="issues-registered">
+            <h2>Number Of Issues Registered</h2>
+            <div class="issues-count">
+                <div class="triangle">
+                    <span>21</span>
+                </div>
+            </div>
+            <button class="view-issues">VIEW ISSUES</button>
+        </div>
+
+        <div class="problems">
+            <h2>Problems</h2>
+            <label for="solved-issues">Solved issues:</label>
+            <input type="text" id="solved-issues" placeholder="Enter solved issues">
+            
+            <label for="pending-issues">Pending issues:</label>
+            <input type="text" id="pending-issues" placeholder="Enter pending issues">
+            
+            <button class="update-button">UPDATE</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - Interaction Platform</title>
+    <link rel="stylesheet" href="Login.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">VoiceBridge</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Login</h2>
+    <div class="login-options">
+        <button onclick="document.getElementById('citizen-form').style.display='block'; document.getElementById('politician-form').style.display='none'; document.getElementById('admin-form').style.display='none';">Citizen Login</button>
+        <button onclick="document.getElementById('politician-form').style.display='block'; document.getElementById('citizen-form').style.display='none'; document.getElementById('admin-form').style.display='none';">Politician Login</button>
+        <button onclick="document.getElementById('admin-form').style.display='block'; document.getElementById('citizen-form').style.display='none'; document.getElementById('politician-form').style.display='none';">Admin Login</button>
+    </div>
+
+    <div id="login-forms" class="login-forms">
+        <div id="citizen-form" class="login-form hidden">
+            <h3>Citizen Login</h3>
+            <form action="Citizen.html">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="politician-form" class="login-form hidden">
+            <h3>Politician Login</h3>
+            <form action="Politician.html">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="admin-form" class="login-form hidden">
+            <h3>Admin Login</h3>
+            <form action="Admin.html">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <p class="register-prompt">Don't have an account? <a href="Register.html">Register</a></p>
+
+    <!-- Account Prompt Box -->
+    <div id="account-prompt" class="account-prompt">
+        <h2>Register</h2>
+        <form class="register-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <button type="button" onclick="document.getElementById('account-prompt').style.display='none';">Cancel</button>
+        </form>
+    </div>
+
+</body>
+</html>
